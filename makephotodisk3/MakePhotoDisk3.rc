@@ -1,0 +1,777 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#ifndef APSTUDIO_INVOKED
+#include "targetver.h"
+#endif
+#include "afxres.h"
+#include "verrsrc.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (United States) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#ifndef APSTUDIO_INVOKED\r\n"
+    "#include ""targetver.h""\r\n"
+    "#endif\r\n"
+    "#include ""afxres.h""\r\n"
+    "#include ""verrsrc.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#include ""res\\MakePhotoDisk3.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""      // Standard components\r\n"
+    "#include ""afxprint.rc""    // printing/print preview resources\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\MakePhotoDisk3.ico"
+IDR_MakePhotoDisk3TYPE  ICON                    "res\\MakePhotoDisk3Doc.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINFRAME           BITMAP                  "res\\Toolbar.bmp"
+IDB_COLLECTION_TREE_IMAGES BITMAP                  "res\\collectiontree.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR 16, 15
+BEGIN
+    BUTTON      ID_FILE_NEW
+    BUTTON      ID_FILE_OPEN
+    BUTTON      ID_FILE_SAVE
+    SEPARATOR
+    BUTTON      ID_EDIT_CUT
+    BUTTON      ID_EDIT_COPY
+    BUTTON      ID_EDIT_PASTE
+    SEPARATOR
+    BUTTON      ID_FILE_PRINT
+    BUTTON      ID_APP_ABOUT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&New\tCtrl+N",                ID_FILE_NEW
+        MENUITEM "&Open...\tCtrl+O",            ID_FILE_OPEN
+        MENUITEM "&Save\tCtrl+S",               ID_FILE_SAVE
+        MENUITEM "Save &As...",                 ID_FILE_SAVE_AS
+        MENUITEM SEPARATOR
+        MENUITEM "&Print...\tCtrl+P",           ID_FILE_PRINT
+        MENUITEM "Print Pre&view",              ID_FILE_PRINT_PREVIEW
+        MENUITEM "P&rint Setup...",             ID_FILE_PRINT_SETUP
+        MENUITEM SEPARATOR
+        POPUP "Recent Disk Projects"
+        BEGIN
+            MENUITEM "Recent File",                 ID_FILE_MRU_FILE1
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "&Edit"
+    BEGIN
+        MENUITEM "&Undo\tCtrl+Z",               ID_EDIT_UNDO
+        MENUITEM SEPARATOR
+        MENUITEM "Cu&t\tCtrl+X",                ID_EDIT_CUT
+        MENUITEM "&Copy\tCtrl+C",               ID_EDIT_COPY
+        MENUITEM "&Paste\tCtrl+V",              ID_EDIT_PASTE
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "&Toolbar",                    ID_VIEW_TOOLBAR
+        MENUITEM "&Status Bar",                 ID_VIEW_STATUS_BAR
+        POPUP "&Application Look"
+        BEGIN
+            MENUITEM "Windows &2000",               ID_VIEW_APPLOOK_WIN_2000
+            MENUITEM "Office &XP",                  ID_VIEW_APPLOOK_OFF_XP
+            MENUITEM "&Windows XP",                 ID_VIEW_APPLOOK_WIN_XP
+            MENUITEM "Office 200&3",                ID_VIEW_APPLOOK_OFF_2003
+            MENUITEM "Visual Studio 200&5",         ID_VIEW_APPLOOK_VS_2005
+            MENUITEM "Visual Studio 200&8",         ID_VIEW_APPLOOK_VS_2008
+            POPUP "Office 200&7"
+            BEGIN
+                MENUITEM "&Blue Style",                 ID_VIEW_APPLOOK_OFF_2007_BLUE
+                MENUITEM "B&lack Style",                ID_VIEW_APPLOOK_OFF_2007_BLACK
+                MENUITEM "&Silver Style",               ID_VIEW_APPLOOK_OFF_2007_SILVER
+                MENUITEM "&Aqua Style",                 ID_VIEW_APPLOOK_OFF_2007_AQUA
+            END
+        END
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&About MakePhotoDisk3...",    ID_APP_ABOUT
+    END
+END
+
+IDR_THEME_MENU MENU
+BEGIN
+    MENUITEM "Office 2007 (&Blue Style)",   ID_VIEW_APPLOOK_OFF_2007_BLUE
+    MENUITEM "Office 2007 (B&lack Style)",  ID_VIEW_APPLOOK_OFF_2007_BLACK
+    MENUITEM "Office 2007 (&Silver Style)", ID_VIEW_APPLOOK_OFF_2007_SILVER
+    MENUITEM "Office 2007 (&Aqua Style)",   ID_VIEW_APPLOOK_OFF_2007_AQUA
+    MENUITEM "Win&dows 7",                  ID_VIEW_APPLOOK_WINDOWS_7
+END
+
+IDR_LIGHT_TABLE_RCLICK_SINGLE_SELECT MENU
+BEGIN
+    POPUP "LT right click"
+    BEGIN
+        MENUITEM "Properties",                  ID_PROPERTIES
+        MENUITEM "Show in Explorer",            ID_SHOW_IN_EXPLORER
+        MENUITEM "Edit Source Image",           ID_EDIT_SOURCE
+        MENUITEM "Select Key Image",            ID_SELECT_KEY_IMAGE
+        MENUITEM "Select Disk Icon",            ID_SELECT_DISK_ICON
+    END
+END
+
+IDR_LIGHT_TABLE_RCLICK_MULTI_SELECT MENU
+BEGIN
+    POPUP "LT Right Click MS"
+    BEGIN
+        MENUITEM "Set Title && Description",    ID__SETTITLEDESCRIPTION
+        MENUITEM "Set Time Adjust",             ID__SETTIMEADJUST
+        MENUITEM "Edit Photographer and/or Camera", ID__SETPHOTOGANDCAMERA
+        MENUITEM "Edit Comment",                ID__EDITCOMMENT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS
+BEGIN
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL
+    "P",            ID_FILE_PRINT,          VIRTKEY, CONTROL
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY 
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 170, 62
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About MakePhotoDisk3"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,14,14,21,20
+    LTEXT           "MakePhotoDisk3, Version 1.0",IDC_STATIC,42,14,114,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2013",IDC_STATIC,42,26,114,8
+    DEFPUSHBUTTON   "OK",IDOK,113,41,50,14,WS_GROUP
+END
+
+IDD_SELECT_CATALOG_COLLECTION DIALOGEX 0, 0, 206, 380
+STYLE DS_SETFONT | WS_CHILD | WS_SYSMENU
+FONT 9, "Segoe UI", 400, 0, 0x0
+BEGIN
+    LTEXT           "Select a catalog:",IDC_STATIC,7,8,54,8
+    PUSHBUTTON      "&Browse",IDC_CATALOG_BROWSE,149,17,50,14
+    CONTROL         "",IDC_COLLECTION_TREE,"SysTreeView32",TVS_HASBUTTONS | TVS_HASLINES | TVS_SHOWSELALWAYS | WS_BORDER | WS_HSCROLL | WS_TABSTOP,7,40,192,312
+    COMBOBOX        IDC_CATALOG_COMBO,7,18,136,76,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "&Next",IDC_NEXT_STEP,7,359,192,14
+END
+
+IDD_DEFINE_PROJECT DIALOGEX 0, 0, 206, 380
+STYLE DS_SETFONT | WS_CHILD | WS_SYSMENU
+FONT 9, "Segoe UI", 400, 0, 0x0
+BEGIN
+    PUSHBUTTON      "Create Project",IDC_CREATE_PROJECT,7,359,194,14
+    LTEXT           "Collection with 128 photographs",IDC_COLLECTION_DESCRIPTION,7,7,192,8
+    LTEXT           "disk 46",IDC_COLLECTION_NAME,7,16,192,8
+    LTEXT           "Location for project directory",IDC_STATIC,7,87,99,8
+    LTEXT           "Directory Name",IDC_STATIC,7,115,94,8
+    EDITTEXT        IDC_DIRECTORY_NAME,7,125,192,14,ES_AUTOHSCROLL
+    COMBOBOX        IDC_PROJECT_TYPE_COMBO,7,174,192,80,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Disk type",IDC_STATIC,7,164,31,8
+    COMBOBOX        IDC_PROJECT_LOCATION,7,96,136,65,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "&Browse",IDC_BROWSE_DIRECTORY,149,95,50,14
+    LTEXT           "Family && Friends disk\n\nFor each image, this disk will include a\n    high-quality presentation\n    full-size image\n    facebook-sized image\n    compressed image\n\nThe disk comes with a full release for non-commercial use",IDC_DISK_TYPE_DESCRIPTION,7,194,192,100
+    PUSHBUTTON      "Back",IDC_BACK,7,341,194,14
+END
+
+IDD_CONFIRM_PROJECT_CREATION DIALOGEX 0, 0, 309, 174
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Confirm Project Creation"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,198,153,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,252,153,50,14
+    LTEXT           "You have opted to create a new disk project with the following options:",IDC_STATIC,7,7,295,12
+    RTEXT           "Catalog:",IDC_STATIC,8,29,40,8
+    RTEXT           "Collection:",IDC_STATIC,8,44,40,8
+    RTEXT           "Directory:",IDC_STATIC,8,74,40,8
+    RTEXT           "Disk Type:",IDC_STATIC,8,89,40,8
+    LTEXT           "c:\\users\\csentz\\documents\\hoagy\\lightroom\\catalog 4\\hoagy 4.lrcat",IDC_CATALOG_NAME,53,29,249,8
+    LTEXT           "disk 46",IDC_COLLECTION_NAME,53,44,249,8
+    LTEXT           "128 images",IDC_PHOTO_COUNT,53,59,249,8
+    LTEXT           "c:\\users\\csentz\\documents\\hoagy\\disk 46",IDC_DIRECTORY_NAME,53,74,249,8
+    LTEXT           "Friends && Family",IDC_DISK_TYPE,53,89,249,8
+    LTEXT           "Click 'OK' to create the directory and copy the template files. You will then be able to update the jpegs, and start the disk-burning software.",IDC_STATIC,7,114,295,25
+END
+
+IDD_UPDATE_PROJECT DIALOGEX 0, 0, 206, 380
+STYLE DS_SETFONT | WS_CHILD | WS_SYSMENU
+FONT 9, "Segoe UI", 400, 0, 0x0
+BEGIN
+    LTEXT           "Select any image and edit its title, description, or comments in the edit pane below.",IDC_STATIC,7,7,192,17
+    LTEXT           "Catalog:",IDC_STATIC,7,28,30,8
+    EDITTEXT        IDC_CATALOG,7,37,192,14,ES_AUTOHSCROLL | ES_READONLY | NOT WS_TABSTOP
+    LTEXT           "Collection:",IDC_STATIC,7,55,34,8
+    EDITTEXT        IDC_COLLECTION,7,64,192,14,ES_AUTOHSCROLL | ES_READONLY | NOT WS_TABSTOP
+    LTEXT           "30 photos in a Family & Frriends disk",IDC_DISK_TYPE_TEXT,7,85,192,9
+    CONTROL         "Large Presentation",IDC_LARGE_PRESENTATION,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,17,96,72,10
+    CONTROL         "Watermark Presentation",IDC_WATERMARK_PRESENTATION,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,100,96,99,10
+    CONTROL         "Compressed",IDC_COMPRESSED,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,17,106,72,10
+    CONTROL         "Watermark Compressed",IDC_WATERMARK_COMPRESSED,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,100,106,99,10
+    CONTROL         "Facebook",IDC_FACEBOOK,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,17,116,72,10
+    CONTROL         "Watermark Facebook",IDC_WATERMARK_FACEBOOK,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,100,116,99,10
+    CONTROL         "Full Size",IDC_FULL_SIZE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,17,126,72,10
+    CONTROL         "Watermark Full Size",IDC_WATERMARK_FULL_SIZE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,100,126,99,10
+    PUSHBUTTON      "Update Jpegs and HTML",IDC_UDPATE_FILES,7,151,192,14
+    CONTROL         "",IDC_DISK_ICON_PIC,"Static",SS_BLACKFRAME | SS_SUNKEN,7,171,79,79,WS_EX_CLIENTEDGE
+    CONTROL         "",IDC_KEY_IMAGE_PIC,"Static",SS_BLACKFRAME | SS_SUNKEN,94,171,105,79,WS_EX_CLIENTEDGE
+    PUSHBUTTON      "Edit Start Page",IDC_EDIT_START_PAGE,7,257,192,14
+    LTEXT           "Disk Title",IDC_STATIC,7,281,64,8
+    EDITTEXT        IDC_DISK_TITLE_EDIT,7,290,192,14,ES_AUTOHSCROLL
+    LTEXT           "Revision Number",IDC_STATIC,7,308,53,8
+    EDITTEXT        IDC_DISK_REVISION_EDIT,7,317,78,14,ES_AUTOHSCROLL
+    LTEXT           "Disk usage unavailable until jpeg's are refreshed",IDC_DISK_USAGE,7,342,192,11
+    PUSHBUTTON      "Burn the Disk",IDC_BURN_DISK,7,359,192,14,WS_DISABLED
+END
+
+IDD_EDIT_OUTPUT_FORM DIALOGEX 0, 0, 446, 113
+STYLE DS_SETFONT | WS_CHILD | WS_SYSMENU
+FONT 9, "Segoe UI", 400, 0, 0x0
+BEGIN
+    LTEXT           "Title: Description",IDC_TITLE_AND_DESCRIPTION,7,3,432,8
+    LTEXT           "Creation subcaption",IDC_CREATED_WITH_CAMERA_ON_DATE,7,15,432,8
+    LTEXT           "Exposure data",IDC_EXPOSURE_DATA,7,24,432,8
+    CONTROL         "Enable extended comment.",IDC_ENABLE_EXTENDED_COMMENT,
+                    "Button",BS_AUTOCHECKBOX | NOT WS_VISIBLE | WS_DISABLED | WS_TABSTOP,7,38,219,10
+    EDITTEXT        IDC_EXTENDED_EDIT,7,49,432,57,ES_MULTILINE | ES_AUTOHSCROLL | ES_WANTRETURN | NOT WS_VISIBLE | WS_DISABLED
+END
+
+IDD_REFRESH_CONTENT DIALOGEX 0, 0, 309, 207
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Refreshing disk content"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,198,186,50,14,WS_DISABLED
+    PUSHBUTTON      "Cancel",IDCANCEL,252,186,50,14
+    LTEXT           "Refreshing the jpegs and HTML for this disk. Please be patient. This may take several minutes. ",IDC_STATIC,7,7,295,21
+    CONTROL         "",IDC_PROGRESS_BAR,"msctls_progress32",WS_BORDER,7,168,295,11
+    EDITTEXT        IDC_CURRENT_FILE,7,133,295,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Overall progress:",IDC_PROGRESS_BAR_CAPTION,7,158,56,8
+    CONTROL         "",IDC_PICTURE_FRAME,"Static",SS_BLACKFRAME | SS_SUNKEN,109,29,90,90,WS_EX_CLIENTEDGE
+END
+
+IDD_IMAGE_PROPERTIES DIALOGEX 0, 0, 309, 177
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Image Properties"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,252,156,50,14
+    LTEXT           "File Name",IDC_STATIC,7,7,32,8
+    EDITTEXT        IDC_FILE_NAME,7,16,295,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Location",IDC_STATIC,7,36,28,8
+    EDITTEXT        IDC_PATH,7,46,295,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Created:",IDC_STATIC,71,70,30,8
+    LTEXT           "Last Modified:",IDC_STATIC,55,85,46,8
+    LTEXT           "Last Accessed:",IDC_STATIC,51,100,49,8
+    LTEXT           "File Size:",IDC_STATIC,71,115,29,8
+    LTEXT           "Wednesday 31 September, 2003 at 03:25 am",IDC_CREATED_TIME,105,70,197,8
+    LTEXT           "Wednesday 31 September, 2003 at 03:25 am",IDC_MODIFIED_TIME,105,85,197,8
+    LTEXT           "Wednesday 31 September, 2003 at 03:25 am",IDC_ACCESSED_TIME,105,100,197,8
+    LTEXT           "320 Mb.",IDC_FILE_SIZE,105,115,197,8
+END
+
+IDD_PHOTO_TITLE_EDIT DIALOGEX 0, 0, 341, 178
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Photo Title & Description"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "Custom title",IDC_CUSTOM_TITLE_CHECK,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,46,141,10
+    EDITTEXT        IDC_TITLE_EDIT,7,59,327,14,ES_AUTOHSCROLL | WS_DISABLED
+    CONTROL         "Custom description",IDC_CUSTOM_DESCR_CHECK,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,92,153,10
+    EDITTEXT        IDC_DESCR_EDIT,7,105,327,14,ES_AUTOHSCROLL | WS_DISABLED
+    DEFPUSHBUTTON   "OK",IDOK,227,157,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,284,157,50,14
+    LTEXT           "Caption preview",IDC_CAPTION_PREVIEW,7,22,327,14,SS_ENDELLIPSIS
+END
+
+IDD_PHOTO_TIME_EDIT DIALOGEX 0, 0, 341, 178
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Creation subcaption"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "Override create time",IDC_OVERWRIDE_CREATE_TIME,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,54,119,10
+    CONTROL         "",IDC_CREATE_DATE_TIME,"SysDateTimePick32",DTS_RIGHTALIGN | WS_DISABLED | WS_TABSTOP,7,65,161,15
+    CONTROL         "Adjust time",IDC_ADJUST_TIME_CHECK,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,241,54,52,10
+    EDITTEXT        IDC_ADJUST_TIME,241,65,93,14,ES_AUTOHSCROLL | WS_DISABLED
+    CONTROL         "Photographer credit",IDC_PHOTOGRAPHER_CREDIT_CHECK,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,103,80,10
+    EDITTEXT        IDC_PHOTOGRAPHER_EDIT,7,115,182,14,ES_AUTOHSCROLL | WS_DISABLED
+    CONTROL         "Edit camera ID",IDC_EDIT_CAMERA_NAME,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,199,103,63,10
+    EDITTEXT        IDC_CAMERA_NAME_EDIT,199,116,135,14,ES_AUTOHSCROLL | WS_DISABLED
+    DEFPUSHBUTTON   "OK",IDOK,230,157,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,284,157,50,14
+    LTEXT           "Caption preview",IDC_CAPTION_PREVIEW,7,22,327,14,SS_ENDELLIPSIS
+END
+
+IDD_PHOTO_TIME_MULTI DIALOGEX 0, 0, 341, 178
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Photo Create Time Adjust"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "Adjust time",IDC_ADJUST_TIME_CHECK,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,7,141,10
+    EDITTEXT        IDC_ADJUST_TIME_EDIT,7,20,327,14,ES_AUTOHSCROLL | WS_DISABLED
+    DEFPUSHBUTTON   "OK",IDOK,227,157,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,284,157,50,14
+END
+
+IDD_PHOTOCAM_MULTI DIALOGEX 0, 0, 341, 178
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Photographer and/or Camera"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "Photographer byline",IDC_CUSTOM_PHOTOG_CHECK,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,7,141,10
+    EDITTEXT        IDC_PHOTOG_EDIT,7,20,327,14,ES_AUTOHSCROLL | WS_DISABLED
+    CONTROL         "Designate Camera",IDC_CUSTOM_CAMERA_CHECK,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,53,153,10
+    EDITTEXT        IDC_CAMERA_EDIT,7,66,327,14,ES_AUTOHSCROLL | WS_DISABLED
+    DEFPUSHBUTTON   "OK",IDOK,227,157,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,284,157,50,14
+END
+
+IDD_PHOTO_TITLE_MULTI DIALOGEX 0, 0, 341, 178
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Photo Title & Description"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "Custom title",IDC_CUSTOM_TITLE_CHECK,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,7,141,10
+    EDITTEXT        IDC_TITLE_EDIT,7,20,327,14,ES_AUTOHSCROLL | WS_DISABLED
+    CONTROL         "Custom description",IDC_CUSTOM_DESCR_CHECK,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,53,153,10
+    EDITTEXT        IDC_DESCR_EDIT,7,66,327,14,ES_AUTOHSCROLL | WS_DISABLED
+    DEFPUSHBUTTON   "OK",IDOK,227,157,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,284,157,50,14
+END
+
+IDD_PHOTO_COMMENT_MULTI DIALOGEX 0, 0, 341, 178
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Photo Comment"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "Add comment",IDC_ADD_COMMENT,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,7,141,10
+    EDITTEXT        IDC_COMMENT,7,20,327,127,ES_MULTILINE | ES_AUTOHSCROLL | ES_WANTRETURN | WS_DISABLED
+    DEFPUSHBUTTON   "OK",IDOK,227,157,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,284,157,50,14
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x40004L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904B0"
+        BEGIN
+            VALUE "CompanyName", "TODO: <Company name>"
+            VALUE "FileDescription", "MakePhotoDisk3"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "MakePhotoDisk3.exe"
+            VALUE "LegalCopyright", "TODO: (c) <Company name>.  All rights reserved."
+            VALUE "OriginalFilename", "MakePhotoDisk3.exe"
+            VALUE "ProductName", "TODO: <Product name>"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 163
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 55
+    END
+
+    IDD_SELECT_CATALOG_COLLECTION, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 199
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 373
+    END
+
+    IDD_DEFINE_PROJECT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 199
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 373
+    END
+
+    IDD_CONFIRM_PROJECT_CREATION, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 302
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 167
+    END
+
+    IDD_UPDATE_PROJECT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 199
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 373
+    END
+
+    IDD_EDIT_OUTPUT_FORM, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 439
+        TOPMARGIN, 3
+        BOTTOMMARGIN, 106
+    END
+
+    IDD_REFRESH_CONTENT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 302
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 200
+    END
+
+    IDD_IMAGE_PROPERTIES, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 302
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 170
+    END
+
+    IDD_PHOTO_TITLE_EDIT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 334
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 171
+    END
+
+    IDD_PHOTO_TIME_EDIT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 334
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 171
+    END
+
+    IDD_PHOTO_TIME_MULTI, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 334
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 171
+    END
+
+    IDD_PHOTOCAM_MULTI, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 334
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 171
+    END
+
+    IDD_PHOTO_TITLE_MULTI, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 334
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 171
+    END
+
+    IDD_PHOTO_COMMENT_MULTI, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 334
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 171
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// PNG
+//
+
+IDB_CAUTION_TAG         PNG                     "res\\caution.png"
+IDB_NOTE_TAG            PNG                     "res\\notepad.png"
+IDB_STOP_TAG            PNG                     "res\\stopsign.png"
+IDB_NO_PREVIEW          PNG                     "res\\nopreview.png"
+IDB_OUTDATED_JPEG       PNG                     "res\\outdated.png"
+IDB_UPDATE_DONE         PNG                     "res\\ok-done.png"
+IDB_UPDATE_CANCELED     PNG                     "res\\update-canceled.png"
+IDB_UPDATE_ERROR        PNG                     "res\\update-error.png"
+IDB_UPDATE_NUMBER       PNG                     "res\\update-output.png"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// HTML
+//
+
+IDR_CONTACT_SHEET       HTML                    "res\\contactsheet.htm"
+IDR_PRESENTATION        HTML                    "res\\PresentationPrototype.htm"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDP_OLE_INIT_FAILED     "OLE initialization failed.  Make sure that the OLE libraries are the correct version."
+END
+
+STRINGTABLE
+BEGIN
+    IDR_MAINFRAME           "MakePhotoDisk3\n\nMakePhotoDisk3\nMakePhotoDisk3 Files (*.dp)\n.dp\nMakePhotoDisk3.Document\nMakePhotoDisk3.Document"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_APP_TITLE       "MakePhotoDisk3"
+    AFX_IDS_IDLEMESSAGE     "Ready"
+END
+
+STRINGTABLE
+BEGIN
+    ID_INDICATOR_EXT        "EXT"
+    ID_INDICATOR_CAPS       "CAP"
+    ID_INDICATOR_NUM        "NUM"
+    ID_INDICATOR_SCRL       "SCRL"
+    ID_INDICATOR_OVR        "OVR"
+    ID_INDICATOR_REC        "REC"
+END
+
+STRINGTABLE
+BEGIN
+    ID_FILE_NEW             "Create a new document\nNew"
+    ID_FILE_OPEN            "Open an existing document\nOpen"
+    ID_FILE_CLOSE           "Close the active document\nClose"
+    ID_FILE_SAVE            "Save the active document\nSave"
+    ID_FILE_SAVE_AS         "Save the active document with a new name\nSave As"
+    ID_FILE_PAGE_SETUP      "Change the printing options\nPage Setup"
+    ID_FILE_PRINT_SETUP     "Change the printer and printing options\nPrint Setup"
+    ID_FILE_PRINT           "Print the active document\nPrint"
+    ID_FILE_PRINT_DIRECT    "Print the active document using current options\nQuick Print"
+    ID_FILE_PRINT_PREVIEW   "Display full pages\nPrint Preview"
+END
+
+STRINGTABLE
+BEGIN
+    ID_APP_ABOUT            "Display program information, version number and copyright\nAbout"
+    ID_APP_EXIT             "Quit the application; prompts to save documents\nExit"
+END
+
+STRINGTABLE
+BEGIN
+    ID_FILE_MRU_FILE1       "Open this document"
+    ID_FILE_MRU_FILE2       "Open this document"
+    ID_FILE_MRU_FILE3       "Open this document"
+    ID_FILE_MRU_FILE4       "Open this document"
+    ID_FILE_MRU_FILE5       "Open this document"
+    ID_FILE_MRU_FILE6       "Open this document"
+    ID_FILE_MRU_FILE7       "Open this document"
+    ID_FILE_MRU_FILE8       "Open this document"
+    ID_FILE_MRU_FILE9       "Open this document"
+    ID_FILE_MRU_FILE10      "Open this document"
+    ID_FILE_MRU_FILE11      "Open this document"
+    ID_FILE_MRU_FILE12      "Open this document"
+    ID_FILE_MRU_FILE13      "Open this document"
+    ID_FILE_MRU_FILE14      "Open this document"
+    ID_FILE_MRU_FILE15      "Open this document"
+    ID_FILE_MRU_FILE16      "Open this document"
+END
+
+STRINGTABLE
+BEGIN
+    ID_NEXT_PANE            "Switch to the next window pane\nNext Pane"
+    ID_PREV_PANE            "Switch back to the previous window pane\nPrevious Pane"
+END
+
+STRINGTABLE
+BEGIN
+    ID_WINDOW_SPLIT         "Split the active window into panes\nSplit"
+END
+
+STRINGTABLE
+BEGIN
+    ID_EDIT_CLEAR           "Erase the selection\nErase"
+    ID_EDIT_CLEAR_ALL       "Erase everything\nErase All"
+    ID_EDIT_COPY            "Copy the selection and put it on the Clipboard\nCopy"
+    ID_EDIT_CUT             "Cut the selection and put it on the Clipboard\nCut"
+    ID_EDIT_FIND            "Find the specified text\nFind"
+    ID_EDIT_PASTE           "Insert Clipboard contents\nPaste"
+    ID_EDIT_REPEAT          "Repeat the last action\nRepeat"
+    ID_EDIT_REPLACE         "Replace specific text with different text\nReplace"
+    ID_EDIT_SELECT_ALL      "Select the entire document\nSelect All"
+    ID_EDIT_UNDO            "Undo the last action\nUndo"
+    ID_EDIT_REDO            "Redo the previously undone action\nRedo"
+END
+
+STRINGTABLE
+BEGIN
+    ID_VIEW_TOOLBAR         "Show or hide the toolbar\nToggle ToolBar"
+    ID_VIEW_STATUS_BAR      "Show or hide the status bar\nToggle Status Bar"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_SCSIZE          "Change the window size"
+    AFX_IDS_SCMOVE          "Change the window position"
+    AFX_IDS_SCMINIMIZE      "Reduce the window to an icon"
+    AFX_IDS_SCMAXIMIZE      "Enlarge the window to full size"
+    AFX_IDS_SCNEXTWINDOW    "Switch to the next document window"
+    AFX_IDS_SCPREVWINDOW    "Switch to the previous document window"
+    AFX_IDS_SCCLOSE         "Close the active window and prompts to save the documents"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_SCRESTORE       "Restore the window to normal size"
+    AFX_IDS_SCTASKLIST      "Activate Task List"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_PREVIEW_CLOSE   "Close print preview mode\nCancel Preview"
+END
+
+#endif    // English (United States) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE 9, 1
+#include "res\MakePhotoDisk3.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"      // Standard components
+#include "afxprint.rc"    // printing/print preview resources
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
